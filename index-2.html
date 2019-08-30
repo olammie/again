@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        var a,b;
+    
+        function setValues() {
+            a = Number(document.getElementById("value1").value);
+            b = Number(document.getElementById("value2").value);
+        }
+        function sum() {
+            setValues();
+            result = a+b;
+            alert("The sum is equals to"+result);
+        }
+        function sub() {
+            setValues();
+            result = a-b;
+            alert("The sub is equals to"+result);
+        }
+        function mult() {
+            setValues();
+            result = a*b;
+            alert("The multiplication is equals to"+result);
+        }
+        function div() {
+            setValues();
+            result = a/b;
+            alert("The division is equals to"+result);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input id="value1" type="text">
+        <input id="value2" type="text">
+        <input type="button" onclick="sum()" value="sum" >
+        <input type="button" onclick="sub()" value="substraction" >  
+        <input type="button" onclick="mult()" value="multiply" >
+         <input type="button" onclick="div()" value="divide" >
+    </div>
+</body>
+</html>
